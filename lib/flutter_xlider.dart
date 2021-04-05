@@ -854,7 +854,6 @@ class _FlutterSliderState extends State<FlutterSlider>
             ? Icons.chevron_left
             : Icons.expand_less,
         color: Colors.black45);
-    inputRightHandler.disabled ??= false;
     inputRightHandler.decoration ??= BoxDecoration(boxShadow: [
       BoxShadow(
           color: Colors.black26,
@@ -2330,7 +2329,6 @@ class _MakeHandler extends StatelessWidget {
       handler.child ??= Icon(hIcon, color: Colors.black45);
     }
 
-    handler.disabled ??= false;
     handler.decoration ??= BoxDecoration(boxShadow: [
       BoxShadow(
           color: Colors.black26,
