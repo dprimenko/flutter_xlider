@@ -315,7 +315,7 @@ class _FlutterSliderState extends State<FlutterSlider>
                 width: _containerWidth,
                 child: Stack(
                   overflow: Overflow.visible,
-                  children: drawHandlers(),
+                  children: List<Widget>.from(drawHandlers()),
                 ),
                 foregroundDecoration: widget.foregroundDecoration,
                 decoration: widget.decoration,
