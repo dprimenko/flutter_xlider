@@ -2018,7 +2018,7 @@ class _FlutterSliderState extends State<FlutterSlider>
       ),
     ));
 
-    late double top, right, bottom, left;
+    double? top, right, bottom, left;
     switch (_tooltipData.direction) {
       case FlutterSliderTooltipDirection.top:
         top = 0;
@@ -2038,13 +2038,13 @@ class _FlutterSliderState extends State<FlutterSlider>
     }
 
     if (_tooltipData.positionOffset != null) {
-      if (_tooltipData.positionOffset!.top != null)
+      if (_tooltipData.positionOffset!.top != null && top != null)
         top += _tooltipData.positionOffset!.top!;
-      if (_tooltipData.positionOffset!.left != null)
+      if (_tooltipData.positionOffset!.left != null && left != null)
         left += _tooltipData.positionOffset!.left!;
-      if (_tooltipData.positionOffset!.right != null)
+      if (_tooltipData.positionOffset!.right != null && right != null)
         right += _tooltipData.positionOffset!.right!;
-      if (_tooltipData.positionOffset!.bottom != null)
+      if (_tooltipData.positionOffset!.bottom != null && bottom != null)
         bottom += _tooltipData.positionOffset!.bottom!;
     }
 
